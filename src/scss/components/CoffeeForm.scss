@@ -1,0 +1,54 @@
+.coffeeForm {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-image: url(https://media.istockphoto.com/id/821952658/es/foto/barista-hacer-caf%C3%A9-taza-latte-arte.jpg?s=1024x1024&w=is&k=20&c=u3JtjfQ7okaVkP3p8dr2dPXId1N2A1aPHvulFW5lJ1M=);
+  background-size: cover;
+  min-height: 100vh;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__left {
+    @media (min-width: 768px) {
+      width: 50%;
+      border-radius: 50px;
+      border: 7px solid white;
+      margin-right: 30px;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    background-color: white;
+    padding: 48px;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    width: 100%;
+  }
+  &__tittle {
+    font-family: "Playfair Display";
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background-color: white;
+  padding-inline: 24px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+
+  &__image {
+    width: 120px;
+  }
+
+  &__signup {
+    width: 104px;
+    background-color: #4a4a4a;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    line-height: 32px;
+    display: inline-block;
+    margin-left: 24px;
+  }
+}

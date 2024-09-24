@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="36px" viewBox="0 0 102 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="500" font-family="SignPainter-HouseScriptSemibold, SignPainter" line-spacing="32" font-size="32" font-style="condensed">
+        <g id="720px" transform="translate(-315.000000, -167.000000)" fill="#4A4A4A">
+            <g id="Header" transform="translate(289.000000, 141.000000)">
+                <text id="Logo" transform="translate(76.500000, 40.000000) rotate(-3.000000) translate(-76.500000, -40.000000) ">
+                    <tspan x="25" y="46">CoffeeWeb</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

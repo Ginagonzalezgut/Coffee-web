@@ -1,0 +1,32 @@
+.coffeeForm {
+  color: grey;
+
+  &__label {
+    max-width: 350px;
+    font-size: 12.5px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__input {
+    border-radius: 5px;
+    background-color: #e7ecee;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    width: 100%;
+  }
+
+  &__submit {
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+  }
+}
