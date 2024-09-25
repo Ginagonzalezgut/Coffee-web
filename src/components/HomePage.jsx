@@ -10,7 +10,7 @@ function HomePage({ shops }) {
           backgroundColor: `#${shop.color}`,
         }}
         className="shops__item"
-        key={shop.id_shops}
+        key={shop.id_shop}
       >
         <img
           className="shops__logo"
