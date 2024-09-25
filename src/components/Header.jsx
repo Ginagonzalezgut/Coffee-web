@@ -9,10 +9,10 @@ function Header() {
         <img className="header__image" src={logo} alt="Coffee Web" />
         <div className="header__links">
           <a className="header__login" href="">
-            Login
+            Iniciar Sesión
           </a>
           <a className="header__signup" href="">
-            Sign Up
+            Registrarse
           </a>
         </div>
       </header>

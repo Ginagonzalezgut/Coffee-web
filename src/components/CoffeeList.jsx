@@ -4,11 +4,17 @@ import "../scss/components/CoffeeList.scss";
 function CoffeeList({ coffees }) {
   const coffeeItems = coffees.map((coffee) => {
     return (
-      <div key={coffee.id_coffee}>
-        <img src={coffee.photo_url} alt={coffee.name} />
-        <h1> {coffee.name}</h1>
-        <h2>{coffee.fk_shops}</h2>
-        <h2>{coffee.fk_country}</h2>
+      <div className="coffee__item" key={coffee.id_coffee}>
+        <img
+          className="coffee__image"
+          src={coffee.photo_url}
+          alt={coffee.name}
+        />
+        <div className="coffee__footer">
+          <h1 className="coffee__description coffee__name"> {coffee.name}</h1>
+          <h2 className="coffee__description">{coffee.shop}</h2>
+          <h2 className="coffee__description__country">{coffee.country}</h2>
+        </div>
       </div>
     );
   });
@@ -21,7 +27,9 @@ function CoffeeList({ coffees }) {
           Descubre una colección única de cafés en grano.
         </h2>
       </div>
-      <div>{coffeeItems}</div>
+      <div className="coffee__items__wrapper">
+        <div className="coffee__items">{coffeeItems}</div>
+      </div>
     </>
   );
 }
