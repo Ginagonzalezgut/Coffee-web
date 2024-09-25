@@ -1,0 +1,14 @@
+.footer {
+  background-color: #045e3e;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+
+  &__info {
+    margin: auto;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}

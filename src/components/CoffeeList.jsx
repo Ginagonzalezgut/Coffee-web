@@ -1,5 +1,4 @@
 import React from "react";
-import "../scss/components/CoffeeList.scss";
 
 function CoffeeList({ coffees }) {
   const coffeeItems = coffees.map((coffee) => {
@@ -18,20 +17,7 @@ function CoffeeList({ coffees }) {
       </div>
     );
   });
-
-  return (
-    <>
-      <div className="coffee__hero">
-        <h1 className="coffee__hero__title"> Cafés que cuentan historias</h1>
-        <h2 className="coffee__hero__subtitle">
-          Descubre una colección única de cafés en grano.
-        </h2>
-      </div>
-      <div className="coffee__items__wrapper">
-        <div className="coffee__items">{coffeeItems}</div>
-      </div>
-    </>
-  );
+  return <div>{coffeeItems}</div>;
 }
 
 export default CoffeeList;

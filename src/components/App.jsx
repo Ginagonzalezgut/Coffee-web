@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import "../scss/App.scss";
 import CoffeeForm from "./CoffeeForm";
-import CoffeeList from "./CoffeeList";
+import HomePage from "./HomePage";
 import Header from "./Header";
+import Footer from "./Footer";
+import CoffeeList from "./CoffeeList";
 
 function App() {
   const [coffees, setCoffees] = useState([]);
@@ -39,12 +41,14 @@ function App() {
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<CoffeeList coffees={coffees} />} />
+        <Route path="/" element={<HomePage shops={shops} />} />
+        <Route path="/shop/:id" element={<CoffeeList coffees={coffees} />} />
         <Route
           path="/coffee/new"
           element={<CoffeeForm shops={shops} countries={countries} />}
         />
       </Routes>
+      <Footer />
     </div>
   );
 }

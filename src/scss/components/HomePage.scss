@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 72px;
+
+  &__title {
+    color: #045e3e;
+    font-size: 72px;
+    width: 550px;
+    letter-spacing: -1.12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+.shops {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin-bottom: 48px;
+
+  &__item {
+    border: 1px solid black;
+    filter: grayscale(100%);
+    transition: filter 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
