@@ -18,4 +18,15 @@ async function getCountries() {
   return data;
 }
 
-export default { getCoffee, getShops, getCountries };
+async function getShop(id) {
+  const response = await fetch(`${apiURL}/shop/${id}`);
+  const data = await response.json();
+  return data;
+}
+async function getBreweries() {
+  const response = await fetch(`${apiURL}/breweries`);
+  const data = await response.json();
+  return data;
+}
+
+export default { getCoffee, getShops, getCountries, getShop, getBreweries };
