@@ -1,0 +1,33 @@
+.coffee__list {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  align-items: center;
+  justify-content: center;
+  padding-block: 64px;
+  column-gap: 200px;
+  row-gap: 100px;
+}
+
+.shopItem {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+
+  &__logo {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    object-fit: contain;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-family: "Teko";
+  }
+}

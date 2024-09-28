@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import API from "../services/api";
-import ShopItem from "./ShopItem";
+import API from "../../services/api";
+import ShopItem from "../partials/ShopItem";
+import "../../scss/components/SpecialtyCoffeeShops.scss";
+import "../../scss/components/ShopItem.scss";
 
 function SpecialtyCoffeeShops() {
   const [coffeeShops, setCoffeeShops] = useState([]);
@@ -19,8 +21,12 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <h1>Las mejores cafeterias de espcialidad</h1>
-      <div>{coffeeShopList()}</div>
+      <div className="coffee__hero">
+        <h1 className="coffee__tittle">
+          Las mejores cafeterias de espcialidad para los amantes del café
+        </h1>
+      </div>
+      <div className="coffee__list">{coffeeShopList()}</div>
     </>
   );
 }

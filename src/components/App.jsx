@@ -1,13 +1,10 @@
-import { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "../scss/App.scss";
-import HomePage from "./HomePage";
-import Header from "./Header";
-import Footer from "./Footer";
-import API from "../services/api";
-import Shop from "./Shop";
-import Breweries from "./Breweries";
-import SpecialtyCoffeeShops from "./SpecialtyCoffeeShops";
+import Header from "./partials/Header";
+import Footer from "./partials/Footer";
+import HomePage from "./pages/HomePage";
+import Breweries from "./pages/Breweries";
+import SpecialtyCoffeeShops from "./pages/SpecialtyCoffeeShops";
 
 function App() {
   return (
@@ -15,7 +12,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/shop/:id" element={<Shop />} />
         <Route path="/breweries" element={<Breweries />} />
         <Route
           path="/specialty-coffee-shops"

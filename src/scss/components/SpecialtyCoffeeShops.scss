@@ -1,0 +1,17 @@
+.coffee {
+  &__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../../../public/categories/coffee-background.jpg);
+    background-size: cover;
+    height: 40vh;
+    background-position: center -400px;
+  }
+  &__tittle {
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

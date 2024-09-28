@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import API from "../services/api";
-import ShopItem from "./ShopItem";
+import API from "../../services/api";
+import ShopItem from "../partials/ShopItem";
 
 function Breweries() {
   const [breweries, setBreweries] = useState([]);

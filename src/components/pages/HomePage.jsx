@@ -1,5 +1,5 @@
 import React from "react";
-import "../scss/components/HomePage.scss";
+import "../../scss/components/HomePage.scss";
 import { Link } from "react-router-dom";
 
 function HomePage() {
