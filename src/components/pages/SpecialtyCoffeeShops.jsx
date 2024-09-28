@@ -21,11 +21,11 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <div className="coffee__hero">
-        <h1 className="coffee__tittle">
-          Las mejores cafeterias de espcialidad para los amantes del café
-        </h1>
-      </div>
+      <div className="coffee__hero"></div>
+
+      <h1 className="coffee__title">
+        Las mejores cafeterias de especialidad para los amantes del café
+      </h1>
       <div className="coffee__list">{coffeeShopList()}</div>
     </>
   );
