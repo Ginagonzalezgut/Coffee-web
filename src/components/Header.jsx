@@ -15,6 +15,9 @@ function Header() {
             Registrarse
           </a>
         </div>
+        <div className="header__icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </header>
     </>
   );
