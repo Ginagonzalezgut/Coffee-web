@@ -4,17 +4,25 @@ function ShopItem({ shop }) {
   return (
     <div
       style={{
-        borderColor: `#${shop?.color}`,
-        backgroundColor: `#${shop?.color}`,
+        borderColor: `#${shop.color}`,
+        backgroundColor: `#${shop.color}`,
       }}
-      className="shops__item"
-      key={shop?.id_shop}
+      className="ShopItem"
+      key={shop.id_shop}
     >
       <img
-        className="shops__logo"
-        src={`/logos/${shop?.logo_url}`}
-        alt={shop?.name}
+        className="ShopItem__logo"
+        src={`/logos/${shop.logo_url}`}
+        alt={shop.name}
       />
+      <div>
+        <a href={`https://www.instagram.com/${shop.instagram}`} target="_blank">
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+        <a href={shop.website}>
+          <i className="fa-solid fa-globe"></i>
+        </a>
+      </div>
     </div>
   );
 }

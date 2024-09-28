@@ -7,23 +7,20 @@ import Footer from "./Footer";
 import API from "../services/api";
 import Shop from "./Shop";
 import Breweries from "./Breweries";
+import SpecialtyCoffeeShops from "./SpecialtyCoffeeShops";
 
 function App() {
-  const [shops, setShops] = useState([]);
-
-  useEffect(() => {
-    API.getShops().then((data) => {
-      setShops(data.results);
-    });
-  }, []);
-
   return (
     <div>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage shops={shops} />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/shop/:id" element={<Shop />} />
         <Route path="/breweries" element={<Breweries />} />
+        <Route
+          path="/specialty-coffee-shops"
+          element={<SpecialtyCoffeeShops />}
+        />
       </Routes>
       <Footer />
     </div>

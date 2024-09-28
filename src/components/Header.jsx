@@ -6,7 +6,8 @@ function Header() {
   return (
     <>
       <header className="header">
-        <img className="header__image" src={logo} alt="Coffee Web" />
+        <div></div>
+        {/* <img className="header__image" src={logo} alt="Coffee Web" /> */}
         <div className="header__links">
           <a className="header__login" href="">
             Iniciar Sesión
