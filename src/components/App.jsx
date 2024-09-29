@@ -5,6 +5,7 @@ import Footer from "./partials/Footer";
 import HomePage from "./pages/HomePage";
 import Breweries from "./pages/Breweries";
 import SpecialtyCoffeeShops from "./pages/SpecialtyCoffeeShops";
+import Brunch from "./pages/Brunch";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           path="/specialty-coffee-shops"
           element={<SpecialtyCoffeeShops />}
         />
+        <Route path="/brunch" element={<Brunch />} />
       </Routes>
       <Footer />
     </div>

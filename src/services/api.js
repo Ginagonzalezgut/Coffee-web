@@ -36,6 +36,11 @@ async function getSpecialtyCoffeeShops() {
   return data;
 }
 
+async function getBrunch() {
+  const response = await fetch(`${apiURL}/brunch`);
+  const data = await response.json();
+  return data;
+}
 export default {
   getCoffee,
   getShops,
@@ -43,4 +48,5 @@ export default {
   getShop,
   getBreweries,
   getSpecialtyCoffeeShops,
+  getBrunch,
 };
