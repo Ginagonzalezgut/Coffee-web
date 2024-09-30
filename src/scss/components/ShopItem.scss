@@ -3,14 +3,14 @@
   grid-template-columns: repeat(1, 250px);
   align-items: center;
   justify-content: center;
-  padding-block: 34px;
+  padding-bottom: 34px;
   gap: 50px;
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 250px);
     column-gap: 200px;
     row-gap: 100px;
-    padding-block: 64px;
+    padding-bottom: 64px;
   }
 }
 
