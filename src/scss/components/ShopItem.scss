@@ -1,6 +1,6 @@
 .coffee__list {
   display: grid;
-  grid-template-columns: repeat(1, 250px);
+  grid-template-columns: repeat(1, 450px);
   align-items: center;
   justify-content: center;
   padding-bottom: 34px;
@@ -50,6 +50,12 @@
     padding-top: 40px;
     height: 200px;
     position: relative;
+
+    @media (min-width: 768px) {
+      padding: 20px;
+      padding-top: 40px;
+      height: 200px;
+    }
   }
 
   &__title {
