@@ -21,9 +21,8 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <div className="coffee__hero"></div>
-
-      <h1 className="coffee__title">
+      <div className="hero__background hero__background__coffee"></div>
+      <h1 className="hero__title">
         Las mejores cafeterias de especialidad para los amantes del café
       </h1>
       <div className="coffee__list">{coffeeShopList()}</div>

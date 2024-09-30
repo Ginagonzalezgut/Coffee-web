@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../scss/components/ShopItem.scss";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
+import Hero from "../partials/Hero";
 
 function Brunch() {
   const [brunches, setBrunches] = useState([]);
@@ -18,7 +19,10 @@ function Brunch() {
   }
   return (
     <>
-      <h1 className="coffee__title">¿Y si nos vamos de Brunch? </h1>
+      <Hero
+        text="¿Y si nos vamos de Brunch?"
+        className="hero__background__brunch"
+      />
       <div className="coffee__list">{brunchList()}</div>
     </>
   );

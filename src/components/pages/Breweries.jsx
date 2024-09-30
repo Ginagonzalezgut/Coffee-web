@@ -20,7 +20,8 @@ function Breweries({ shop }) {
 
   return (
     <>
-      <h1 className="coffee__title">Las mejores cervercerías</h1>
+      <div className="hero__background hero__background__breweries"></div>
+      <h1 className="hero__title">Las mejores cervercerías</h1>
       <div className="coffee__list">{breweryList()}</div>
     </>
   );

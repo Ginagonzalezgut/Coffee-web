@@ -30,10 +30,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-block: 8px;
+    border-top: 1px solid #dedede;
   }
 
   &__title {
     font-size: 24px;
     font-family: "Teko";
+  }
+
+  &__links {
+    color: #045e3e;
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+
+    &__instagram {
+    }
   }
 }

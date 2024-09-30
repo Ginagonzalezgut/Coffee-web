@@ -17,12 +17,13 @@ function ShopItem({ shop }) {
         <span className="shopItem__title">{shop.name}</span>
         <div className="shopItem__links">
           <a
+            className="shopItem__links__instagram"
             href={`https://www.instagram.com/${shop.instagram}`}
             target="_blank"
           >
             <i className="fa-brands fa-instagram"></i>
           </a>
-          <a href={shop.website}>
+          <a className="shopItem__links__website" href={shop.website}>
             <i className="fa-solid fa-globe"></i>
           </a>
         </div>

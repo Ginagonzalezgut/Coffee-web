@@ -1,13 +1,23 @@
-.coffee {
-  &__hero {
-    background-image: url(../../../public/categories/coffee-background.jpg);
+.hero {
+  &__background {
     background-size: cover;
-    height: 40vh;
-    background-position: center -400px;
+    height: 320px;
+    background-position: center;
+
+    &__coffee {
+      background-image: url(../../../public/categories/coffee-background.jpg);
+    }
+
+    &__brunch {
+      background-image: url(../../../public/categories/brunch.jpg);
+    }
+    &__breweries {
+      background-image: url(../../../public/categories/breweries2.jpg);
+    }
   }
   &__title {
     color: #045e3e;
-    font-size: 32px;
+    font-size: 30px;
     letter-spacing: -1.12px;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
@@ -19,6 +29,8 @@
       font-size: 62px;
       margin-bottom: 24px;
       line-height: 64px;
+      margin: auto;
+      margin-block: 42px;
     }
   }
 }
