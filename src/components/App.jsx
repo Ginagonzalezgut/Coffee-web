@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "../scss/App.scss";
 import Header from "./partials/Header";
 import Footer from "./partials/Footer";
@@ -9,9 +9,11 @@ import Brunch from "./pages/Brunch";
 import Register from "./pages/Register";
 
 function App() {
+  const location = useLocation();
+
   return (
     <div>
-      <Header />
+      {location.pathname === "/register" ? null : <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<Register />} />
@@ -22,7 +24,7 @@ function App() {
         />
         <Route path="/brunch" element={<Brunch />} />
       </Routes>
-      <Footer />
+      {location.pathname === "/register" ? null : <Footer />}
     </div>
   );
 }
