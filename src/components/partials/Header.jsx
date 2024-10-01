@@ -15,9 +15,9 @@ function Header() {
           <a className="header__login" href="">
             Iniciar Sesión
           </a>
-          <a className="header__signup" href="">
+          <Link className="header__signup" to="/register">
             Registrarse
-          </a>
+          </Link>
         </div>
         <div className="header__icon">
           <i class="fa-solid fa-bars"></i>

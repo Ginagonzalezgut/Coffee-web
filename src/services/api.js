@@ -41,6 +41,14 @@ async function getBrunch() {
   const data = await response.json();
   return data;
 }
+async function postUser(newUser) {
+  const response = await fetch(`${apiURL}/register`, {
+    method: "POST",
+    body: JSON.stringify(newUser),
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
 export default {
   getCoffee,
   getShops,
@@ -49,4 +57,5 @@ export default {
   getBreweries,
   getSpecialtyCoffeeShops,
   getBrunch,
+  postUser,
 };

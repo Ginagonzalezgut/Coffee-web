@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 40px;
+
+  &__title {
+    color: #045e3e;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.12px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  &__desc {
+    font-size: 18px;
+  }
+  &__register {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import Breweries from "./pages/Breweries";
 import SpecialtyCoffeeShops from "./pages/SpecialtyCoffeeShops";
 import Brunch from "./pages/Brunch";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/breweries" element={<Breweries />} />
         <Route
           path="/specialty-coffee-shops"
