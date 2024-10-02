@@ -8,7 +8,7 @@
 
   &__logo {
     width: 130px;
-    margin-bottom: 40px;
+    margin: 40px;
   }
 
   &__form {
@@ -78,5 +78,9 @@
     &:hover {
       background-color: #067850;
     }
+  }
+  &__register {
+    color: #045e3e;
+    text-align: end;
   }
 }

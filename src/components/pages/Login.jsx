@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import API from "../../services/api";
 import "../../scss/components/Login.scss";
 import Logo from "../../images/logo2.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   const [loginUser, setLoginUser] = useState({
@@ -42,7 +43,10 @@ function Login() {
   return (
     <div className="login">
       {error && <p>{error}</p>}
-      <img className="login__logo" src={Logo} alt="Logo_Hangoutspots" />{" "}
+      <Link to="/">
+        <img className="login__logo" src={Logo} alt="Logo_Hangoutspots" />
+      </Link>
+
       <form className="login__form " onSubmit={handleSubmit} action="">
         <h1 className="login__title">Inicia Sesión</h1>
         <p className="login__paragraph">
@@ -73,6 +77,9 @@ function Login() {
         />
 
         <input className="login__submit" type="submit" value="Iniciar Sesión" />
+        <Link className="login__register" to="/register">
+          Crea una cuenta
+        </Link>
       </form>
     </div>
   );
