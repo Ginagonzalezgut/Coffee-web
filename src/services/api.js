@@ -48,12 +48,16 @@ function postUser(newUser) {
     headers: { "Content-Type": "application/json" },
   });
 }
-function postLogin() {
-  fetch(`${apiURL}/login`, {
+function postLogin(loginUser) {
+  return fetch(`${apiURL}/login`, {
     method: "POST",
-    body: JSON.stringify(),
+    body: JSON.stringify(loginUser),
     headers: { "Content-Type": "application/json" },
-  });
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      return data;
+    });
 }
 
 export default {

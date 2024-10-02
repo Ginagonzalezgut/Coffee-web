@@ -12,9 +12,10 @@ function Header() {
         </Link>
 
         <div className="header__links">
-          <a className="header__login" href="">
+          <Link className="header__login" to="/login">
             Iniciar Sesión
-          </a>
+          </Link>
+
           <Link className="header__signup" to="/register">
             Registrarse
           </Link>
