@@ -11,7 +11,7 @@ function SpecialtyCoffeeShops() {
     API.getSpecialtyCoffeeShops().then((data) => {
       setCoffeeShops(data.results);
     });
-  });
+  }, []);
 
   function coffeeShopList() {
     return coffeeShops.map((coffeeShop) => {

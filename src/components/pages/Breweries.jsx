@@ -10,7 +10,7 @@ function Breweries({ shop }) {
     API.getBreweries().then((data) => {
       setBreweries(data.results);
     });
-  });
+  }, []);
 
   function breweryList() {
     return breweries.map((brewery) => {

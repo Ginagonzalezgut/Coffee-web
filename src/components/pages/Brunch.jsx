@@ -11,7 +11,7 @@ function Brunch() {
     API.getBrunch().then((data) => {
       setBrunches(data.results);
     });
-  });
+  }, []);
   function brunchList() {
     return brunches.map((brunch) => {
       return <ShopItem key={brunch.name} shop={brunch} />;
