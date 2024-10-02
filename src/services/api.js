@@ -48,6 +48,13 @@ function postUser(newUser) {
     headers: { "Content-Type": "application/json" },
   });
 }
+function postLogin() {
+  fetch(`${apiURL}/login`, {
+    method: "POST",
+    body: JSON.stringify(),
+    headers: { "Content-Type": "application/json" },
+  });
+}
 
 export default {
   getCoffee,
@@ -58,4 +65,5 @@ export default {
   getSpecialtyCoffeeShops,
   getBrunch,
   postUser,
+  postLogin,
 };
