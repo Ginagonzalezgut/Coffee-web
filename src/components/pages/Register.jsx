@@ -30,7 +30,13 @@ function Register() {
   };
   function handleSubmit(event) {
     event.preventDefault();
-    API.postUser(newUser);
+    API.postUser(newUser).then(() => {
+      setNewUser({
+        username: "",
+        email: "",
+        password: "",
+      });
+    });
   }
 
   return (
