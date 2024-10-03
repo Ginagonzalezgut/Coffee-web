@@ -40,32 +40,64 @@ function Header() {
               </button>
             </div>
 
-            <Link className="menu__mobile__link" to="/login">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/login"
+            >
               INICIA SESIÓN
             </Link>
 
-            <Link className="menu__mobile__link" to="/register">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/register"
+            >
               REGISTRATE
             </Link>
-            <Link className="menu__mobile__link" to="/">
+            <Link onClick={closeMenu} className="menu__mobile__link" to="/">
               CATEGORIAS
             </Link>
-            <Link className="menu__mobile__link" to="/specialty-coffee-shops">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/specialty-coffee-shops"
+            >
               CAFETERIAS DE ESPECIALIDAD
             </Link>
-            <Link className="menu__mobile__link" to="/brunch">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/brunch"
+            >
               BRUNCH
             </Link>
-            <Link className="menu__mobile__link" to="/breweries">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/breweries"
+            >
               CERVECERIAS
             </Link>
-            <Link className="menu__mobile__link" to="/rooftops">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/rooftops"
+            >
               ROOFTOPS
             </Link>
-            <Link className="menu__mobile__link" to="/gelato">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/gelato"
+            >
               GELATO
             </Link>
-            <Link className="menu__mobile__link" to="/large-groups">
+            <Link
+              onClick={closeMenu}
+              className="menu__mobile__link"
+              to="/large-groups"
+            >
               PARA GRUPOS GRANDES
             </Link>
           </div>

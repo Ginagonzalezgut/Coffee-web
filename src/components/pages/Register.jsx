@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../../src/scss/components/Register.scss";
 import API from "../../services/api";
 import { Link } from "react-router-dom";
+import Logo from "../partials/Logo";
 
 function Register() {
   const [newUser, setNewUser] = useState({
@@ -43,6 +44,7 @@ function Register() {
     <div className="register">
       <div className="register__picture">
         <div className="register__desc">
+          <Logo className="register__logo" />
           <h1 className="register__title">
             ¡Tu próxima experiencia culinaria empieza aquí!
           </h1>

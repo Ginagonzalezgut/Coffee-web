@@ -3,11 +3,17 @@
   grid-template-columns: 1fr;
   padding: 40px;
   font-family: "Mulish";
+  position: relative;
+  min-height: 100vh;
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
+    position: relative;
   }
-
+  &__logo {
+    position: absolute;
+    top: 40px;
+  }
   &__desc {
     max-width: 550px;
     gap: 20px;
@@ -33,13 +39,12 @@
     background-color: #f5f5f5;
     background-size: cover;
     display: none;
-    min-height: 90vh;
     order: 1;
     border-radius: 30px;
     padding-inline: 24px;
+    position: relative;
 
     @media (min-width: 768px) {
-      display: block;
       display: flex;
       align-items: center;
       justify-content: center;
