@@ -42,4 +42,39 @@
       display: block;
     }
   }
+  .menu__mobile {
+    background-color: white;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    display: block;
+    padding: 50px;
+    font-family: "Mulish";
+    font-weight: 600;
+    line-height: 1.5;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    &__images {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__icon {
+      padding: 5px;
+    }
+    &__link {
+      display: block;
+      font-size: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #d3d3d3;
+    }
+  }
 }

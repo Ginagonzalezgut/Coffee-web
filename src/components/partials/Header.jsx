@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../scss/components/Header.scss";
-import logo from "../../images/logo2.png";
+
 import { Link } from "react-router-dom";
+import Logo from "../partials/Logo";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const openMenu = () => {
+    setMenuOpen(true);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <header className="header">
-        <Link to="/">
-          <img className="header__image" src={logo} alt="Hangoutspots" />
-        </Link>
+        <Logo className="header__image" />
 
         <div className="header__links">
           <Link className="header__login" to="/login">
@@ -20,7 +29,49 @@ function Header() {
             Registrarse
           </Link>
         </div>
-        <div className="header__icon">
+
+        {menuOpen && (
+          <div className="menu__mobile">
+            <div className="menu__mobile__images">
+              <Logo />
+
+              <button onClick={closeMenu} className="menu__mobile__icon">
+                <i className="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <Link className="menu__mobile__link" to="/login">
+              INICIA SESIÓN
+            </Link>
+
+            <Link className="menu__mobile__link" to="/register">
+              REGISTRATE
+            </Link>
+            <Link className="menu__mobile__link" to="/">
+              CATEGORIAS
+            </Link>
+            <Link className="menu__mobile__link" to="/specialty-coffee-shops">
+              CAFETERIAS DE ESPECIALIDAD
+            </Link>
+            <Link className="menu__mobile__link" to="/brunch">
+              BRUNCH
+            </Link>
+            <Link className="menu__mobile__link" to="/breweries">
+              CERVECERIAS
+            </Link>
+            <Link className="menu__mobile__link" to="/rooftops">
+              ROOFTOPS
+            </Link>
+            <Link className="menu__mobile__link" to="/gelato">
+              GELATO
+            </Link>
+            <Link className="menu__mobile__link" to="/large-groups">
+              PARA GRUPOS GRANDES
+            </Link>
+          </div>
+        )}
+
+        <div className="header__icon" onClick={openMenu}>
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
