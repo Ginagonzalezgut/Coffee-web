@@ -8,6 +8,7 @@ import SpecialtyCoffeeShops from "./pages/SpecialtyCoffeeShops";
 import Brunch from "./pages/Brunch";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Gelato from "./pages/Gelato";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/breweries" element={<Breweries />} />
+        <Route path="/gelato" element={<Gelato />} />
         <Route
           path="/specialty-coffee-shops"
           element={<SpecialtyCoffeeShops />}
