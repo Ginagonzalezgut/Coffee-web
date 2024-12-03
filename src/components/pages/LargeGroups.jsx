@@ -21,7 +21,7 @@ function LargeGroups() {
     <>
       <Hero
         text={
-          "Descubre los rincones más chic y acogedores donde cada comida con amigos se convierte en un momento inolvidable."
+          "Los restaurantes más chic y acogedores para compartir momentos únicos"
         }
         className="hero__background__large-groups"
       />
@@ -30,4 +30,4 @@ function LargeGroups() {
   );
 }
 
-export default BigGroups;
+export default LargeGroups;
