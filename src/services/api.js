@@ -59,7 +59,11 @@ function postLogin(loginUser) {
       return data;
     });
 }
-
+async function getGelato() {
+  const response = await fetch(`${apiURL}/gelato`);
+  const data = await response.json();
+  return data;
+}
 export default {
   getCoffee,
   getShops,
@@ -70,4 +74,5 @@ export default {
   getBrunch,
   postUser,
   postLogin,
+  getGelato,
 };
