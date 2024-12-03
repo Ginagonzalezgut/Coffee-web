@@ -64,6 +64,12 @@ async function getGelato() {
   const data = await response.json();
   return data;
 }
+async function getLargeGroups() {
+  const response = await fetch(`${apiURL}/large-groups`);
+  const data = await response.json();
+  return data;
+}
+
 export default {
   getCoffee,
   getShops,
@@ -75,4 +81,5 @@ export default {
   postUser,
   postLogin,
   getGelato,
+  getLargeGroups,
 };

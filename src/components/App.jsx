@@ -9,6 +9,7 @@ import Brunch from "./pages/Brunch";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Gelato from "./pages/Gelato";
+import LargeGroups from "./pages/LargeGroups";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/breweries" element={<Breweries />} />
         <Route path="/gelato" element={<Gelato />} />
+        <Route path="/large-groups" element={<LargeGroups />} />
         <Route
           path="/specialty-coffee-shops"
           element={<SpecialtyCoffeeShops />}
