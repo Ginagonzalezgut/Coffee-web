@@ -4,11 +4,11 @@ import ShopItem from "../partials/ShopItem";
 import Hero from "../partials/Hero";
 
 function Rooftops() {
-  const [rooftops, setrooftops] = useState([]);
+  const [rooftops, setRooftops] = useState([]);
 
   useEffect(() => {
     API.getRooftops().then((data) => {
-      setrooftops(data.results);
+      setRooftops(data.results);
     });
   }, []);
 
@@ -19,7 +19,10 @@ function Rooftops() {
   }
   return (
     <>
-      <Hero text="" className="hero__rooftops" />
+      <Hero
+        text="Tu próxima aventura comienza en las alturas"
+        className="hero__rooftops"
+      />
 
       <div>{rooftopsList()}</div>
     </>
