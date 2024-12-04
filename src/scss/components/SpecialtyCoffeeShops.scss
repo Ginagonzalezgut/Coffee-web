@@ -138,7 +138,7 @@
 @keyframes cambiarColor {
   0% {
     opacity: 0;
-    color: #eeeedd; /* Color inicial (tomato) */
+    color: #eeeedd;
   }
   50% {
     opacity: 1;
@@ -146,6 +146,6 @@
   }
   100% {
     opacity: 0;
-    color: #eeeedd; /* Vuelve al color inicial */
+    color: #eeeedd;
   }
 }

@@ -10,6 +10,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Gelato from "./pages/Gelato";
 import LargeGroups from "./pages/LargeGroups";
+import Rooftops from "./pages/Rooftops";
 
 function App() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
           element={<SpecialtyCoffeeShops />}
         />
         <Route path="/brunch" element={<Brunch />} />
+        <Route path="/rooftops" element={<Rooftops />} />
       </Routes>
       {location.pathname === "/register" || "/login" ? null : <Footer />}
     </div>
