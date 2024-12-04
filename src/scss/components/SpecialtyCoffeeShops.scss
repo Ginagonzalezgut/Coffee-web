@@ -29,13 +29,14 @@
       color: #d3c2a1;
     }
     .hero__background {
-      background-image: url(../../../public/categories/coffee-background.jpg);
+      background-image: url(../../../public/categories/coffee2.jpg);
     }
   }
   &__brunch {
-    background-color: #fff4e6;
+    background-color: #bc480f;
     .hero__title {
-      color: #d9a91e;
+      animation: aumentarDisminuir 8s ease-in-out infinite;
+      color: #fff;
     }
     .hero__background {
       background-image: url(../../../public/categories/brunch.jpg);
@@ -44,6 +45,7 @@
   &__breweries {
     background-color: #0d0d0d;
     .hero__title {
+      animation: entrarYSalir 8s ease-in-out infinite;
       color: #e3a857;
     }
     .hero__background {
@@ -51,7 +53,7 @@
     }
   }
   &__gelato {
-    background-color: #ffb8c9;
+    background-color: #4f6a2f;
     .hero__title {
       color: #fdf6e3;
     }
@@ -63,10 +65,48 @@
   &__large-groups {
     background-color: #4a4a4a;
     .hero__title {
-      color: #6b8e23;
+      color: #eeeedd;
     }
     .hero__background {
       background-image: url(../../../public//categories/largegroups.jpg);
     }
+  }
+}
+
+@keyframes aumentarDisminuir {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.2);
+  }
+  30% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes entrarYSalir {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  70% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
   }
 }
