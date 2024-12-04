@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import "../../scss/components/ShopItem.scss";
+import Hero from "../partials/Hero";
 
 function Breweries({ shop }) {
   const [breweries, setBreweries] = useState([]);
@@ -20,8 +21,10 @@ function Breweries({ shop }) {
 
   return (
     <>
-      <div className="hero__background hero__background__breweries"></div>
-      <h1 className="hero__title">Las mejores cervercerías</h1>
+      <Hero
+        className="hero__breweries"
+        text="Donde las cervezas cuentan historias y los momentos saben mejor"
+      />
       <div className="coffee__list">{breweryList()}</div>
     </>
   );

@@ -3,40 +3,70 @@
     background-size: cover;
     height: 320px;
     background-position: center;
-
-    &__coffee {
-      background-image: url(../../../public/categories/coffee-background.jpg);
-    }
-
-    &__brunch {
-      background-image: url(../../../public/categories/brunch.jpg);
-    }
-    &__breweries {
-      background-image: url(../../../public/categories/breweries2.jpg);
-    }
-    &__gelato {
-      background-image: url(../../../public/categories/gelatobackground2.jpg);
-    }
-    &__large-groups {
-      background-image: url(../../../public//categories/largegroups.jpg);
-    }
+    width: 100%;
   }
+
   &__title {
     color: #045e3e;
     font-size: 30px;
-    letter-spacing: -1.12px;
+    letter-spacing: 1px;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 400;
     line-height: 32px;
     text-align: center;
-    margin-block: 32px;
 
     @media (min-width: 768px) {
       font-size: 62px;
-      margin-bottom: 24px;
       line-height: 64px;
       margin: auto;
-      margin-block: 42px;
+      padding: 140px 64px;
+    }
+  }
+
+  &__coffee {
+    background-color: #6f4f28;
+    .hero__title {
+      color: #d3c2a1;
+    }
+    .hero__background {
+      background-image: url(../../../public/categories/coffee-background.jpg);
+    }
+  }
+  &__brunch {
+    background-color: #fff4e6;
+    .hero__title {
+      color: #d9a91e;
+    }
+    .hero__background {
+      background-image: url(../../../public/categories/brunch.jpg);
+    }
+  }
+  &__breweries {
+    background-color: #0d0d0d;
+    .hero__title {
+      color: #e3a857;
+    }
+    .hero__background {
+      background-image: url(../../../public/categories/breweries2.jpg);
+    }
+  }
+  &__gelato {
+    background-color: #ffb8c9;
+    .hero__title {
+      color: #fdf6e3;
+    }
+
+    .hero__background {
+      background-image: url(../../../public/categories/gelatobackground2.jpg);
+    }
+  }
+  &__large-groups {
+    background-color: #4a4a4a;
+    .hero__title {
+      color: #6b8e23;
+    }
+    .hero__background {
+      background-image: url(../../../public//categories/largegroups.jpg);
     }
   }
 }

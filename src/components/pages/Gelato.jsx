@@ -21,7 +21,7 @@ function Gelato() {
     <>
       <Hero
         text={"Los mejores lugares para disfrutar gelato artesanal cerca de ti"}
-        className="hero__background__gelato"
+        className="hero__gelato"
       />
       <div className="coffee__list">{gelatoList()}</div>
     </>

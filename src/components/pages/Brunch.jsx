@@ -20,8 +20,8 @@ function Brunch() {
   return (
     <>
       <Hero
-        text="¿Y si nos vamos de Brunch?"
-        className="hero__background__brunch"
+        text="Sabores que despiertan tus mañanas y momentos que alegran tu día"
+        className="hero__brunch"
       />
       <div className="coffee__list">{brunchList()}</div>
     </>

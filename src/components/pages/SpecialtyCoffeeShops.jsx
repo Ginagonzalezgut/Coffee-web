@@ -3,6 +3,7 @@ import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import "../../scss/components/SpecialtyCoffeeShops.scss";
 import "../../scss/components/ShopItem.scss";
+import Hero from "../partials/Hero";
 
 function SpecialtyCoffeeShops() {
   const [coffeeShops, setCoffeeShops] = useState([]);
@@ -21,10 +22,11 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <div className="hero__background hero__background__coffee"></div>
-      <h1 className="hero__title">
-        Las mejores cafeterias de especialidad para los amantes del café
-      </h1>
+      <Hero
+        text="Descubre el arte del café de especialidad, donde cada taza cuenta una historia."
+        className="hero__coffee"
+      />
+
       <div className="coffee__list">{coffeeShopList()}</div>
     </>
   );

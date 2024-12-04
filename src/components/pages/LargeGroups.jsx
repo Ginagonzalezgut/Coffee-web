@@ -23,7 +23,7 @@ function LargeGroups() {
         text={
           "Los restaurantes más chic y acogedores para compartir momentos únicos"
         }
-        className="hero__background__large-groups"
+        className="hero__large-groups"
       />
       <div className="coffee__list">{listLargeGroups()}</div>;
     </>

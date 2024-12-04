@@ -45,9 +45,11 @@ function HomePage() {
   });
   return (
     <>
-      <div className="hero">
-        <h1 className="hero__title">Descubre los mejores spots de Barcelona</h1>
-        <h2 className="hero__subtitle">
+      <div className="homepage-hero">
+        <h1 className="homepage-hero__title">
+          Descubre los mejores spots de Barcelona
+        </h1>
+        <h2 className="homepage-hero__subtitle">
           Encuentra los lugares perfectos para cada plan
         </h2>
       </div>
