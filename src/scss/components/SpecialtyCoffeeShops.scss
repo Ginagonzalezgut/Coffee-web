@@ -27,6 +27,7 @@
     background-color: #6f4f28;
     .hero__title {
       color: #d3c2a1;
+      animation: desvanecer 8s ease-in-out infinite;
     }
     .hero__background {
       background-image: url(../../../public/categories/coffee2.jpg);
@@ -56,6 +57,7 @@
     background-color: #4f6a2f;
     .hero__title {
       color: #fdf6e3;
+      animation: rebote 8s ease-out infinite;
     }
 
     .hero__background {
@@ -66,6 +68,7 @@
     background-color: #4a4a4a;
     .hero__title {
       color: #eeeedd;
+      animation: cambiarColor 8s infinite ease-in-out;
     }
     .hero__background {
       background-image: url(../../../public//categories/largegroups.jpg);
@@ -108,5 +111,41 @@
   100% {
     opacity: 0;
     transform: translateX(0);
+  }
+}
+@keyframes desvanecer {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes rebote {
+  0% {
+    transform: translateY(-250px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+}
+@keyframes cambiarColor {
+  0% {
+    opacity: 0;
+    color: #eeeedd; /* Color inicial (tomato) */
+  }
+  50% {
+    opacity: 1;
+    color: #32cd32;
+  }
+  100% {
+    opacity: 0;
+    color: #eeeedd; /* Vuelve al color inicial */
   }
 }
