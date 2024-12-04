@@ -69,6 +69,11 @@ async function getLargeGroups() {
   const data = await response.json();
   return data;
 }
+async function getRooftops() {
+  const response = fetch(`${apiURL}/rooftops`);
+  const data = await response.json();
+  return data;
+}
 
 export default {
   getCoffee,
@@ -82,4 +87,5 @@ export default {
   postLogin,
   getGelato,
   getLargeGroups,
+  getRooftops,
 };
