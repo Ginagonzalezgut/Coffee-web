@@ -39,7 +39,7 @@ function Breweries({ shop }) {
         text="Donde las cervezas cuentan historias y los momentos saben mejor"
       />
       <div className="logos">
-        <div className="logos__title">Conoce las mejores cervecerias</div>
+        <div className="logos__title">Conoce Las Mejores Cervecerías</div>
         <div className="logos__info">{renderLogos()}</div>
       </div>
 

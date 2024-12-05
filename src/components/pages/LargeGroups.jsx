@@ -40,7 +40,7 @@ function LargeGroups() {
       />
       <div className="logos">
         <div className="logos__title">
-          Conoce los mejores restaurantes para grupos
+          Conoce Los Mejores Restaurantes Para Grupos
         </div>
         <div className="logos__info">{renderLogos()}</div>
       </div>

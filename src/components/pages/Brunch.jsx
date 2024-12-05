@@ -38,7 +38,7 @@ function Brunch() {
         className="hero__brunch"
       />
       <div className="logos">
-        <div className="logos__title">Conoce las mejores Cafeterias</div>
+        <div className="logos__title">Conoce Los Mejores Brunch</div>
         <div className="logos__info">{renderLogos()}</div>
       </div>
       <div className="shops-section">

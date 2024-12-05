@@ -44,7 +44,9 @@ function SpecialtyCoffeeShops() {
         className="hero__coffee"
       />
       <div className="logos">
-        <div className="logos__title">Conoce las mejores Cafeterias</div>
+        <div className="logos__title">
+          Conoce Las Mejores Cafeterías de Especialidad
+        </div>
         <div className="logos__info">{renderLogos()}</div>
       </div>
       <div className="shops-section">

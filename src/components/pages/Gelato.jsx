@@ -37,7 +37,7 @@ function Gelato() {
         className="hero__gelato"
       />
       <div className="logos">
-        <div className="logos__title">Conoce las mejores Gelaterias</div>
+        <div className="logos__title">Conoce Las Mejores Gelaterias</div>
         <div className="logos__info">{renderLogos()}</div>
       </div>
       <div className="shops-section">
