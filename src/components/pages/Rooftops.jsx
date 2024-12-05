@@ -38,7 +38,9 @@ function Rooftops() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Rooftops</div>
-        <div className="logos__info">{renderLogos()}</div>
+        <div className="logos__info">
+          <div className="logos__list">{renderLogos()}</div>
+        </div>
       </div>
 
       <div className="shops-section">

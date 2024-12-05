@@ -39,7 +39,9 @@ function Brunch() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Brunch</div>
-        <div className="logos__info">{renderLogos()}</div>
+        <div className="logos__info">
+          <div className="logos__list">{renderLogos()}</div>
+        </div>
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Lo que ellos piensan</h1>

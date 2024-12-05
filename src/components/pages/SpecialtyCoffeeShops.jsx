@@ -47,7 +47,9 @@ function SpecialtyCoffeeShops() {
         <div className="logos__title">
           Conoce Las Mejores Cafeterías de Especialidad
         </div>
-        <div className="logos__info">{renderLogos()}</div>
+        <div className="logos__info">
+          <div className="logos__list">{renderLogos()}</div>
+        </div>
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Historias que cuentan más...</h1>

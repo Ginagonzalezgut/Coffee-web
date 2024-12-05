@@ -182,8 +182,12 @@
 }
 .logos {
   display: flex;
-  flex-direction: row;
-  height: 300px;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    height: 300px;
+  }
 
   &__title {
     display: flex;
@@ -192,9 +196,14 @@
     text-align: center;
     background-color: #bc480f;
     color: black;
-    font-size: 40px;
+    font-size: 32px;
     font-family: Teko, sans-serif;
-    flex: 1;
+    padding-inline: 48px;
+
+    @media (min-width: 768px) {
+      font-size: 40px;
+      width: 50%;
+    }
   }
   &__breweries {
     margin: 20px;
@@ -209,10 +218,14 @@
     }
   }
   &__info {
+    background-color: #eed6c1;
+    overflow: scroll;
+    flex: 1;
+  }
+  &__list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    height: 100%;
     align-items: center;
-    background-color: #eed6c1;
   }
 }
