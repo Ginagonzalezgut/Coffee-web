@@ -17,14 +17,37 @@ function Rooftops() {
       return <ShopItem key={rooftop.name} shop={rooftop} />;
     });
   }
+  function renderLogos() {
+    return rooftops.map((rooftop) => {
+      return (
+        <a href={`#shop-${rooftop.id_shop}`}>
+          <img
+            className="logos__breweries"
+            src={`/logos/${rooftop.logo_url}`}
+            alt={rooftop.name}
+          />
+        </a>
+      );
+    });
+  }
   return (
     <>
       <Hero
         text="Tu próxima aventura comienza en las alturas"
         className="hero__rooftops"
       />
+      <div className="logos">
+        <div className="logos__title">Conoce los mejores Rooftops</div>
+        <div className="logos__info">{renderLogos()}</div>
+      </div>
 
-      <div>{rooftopsList()}</div>
+      <div className="shops-section">
+        <h1 className="shops-section__title">Tu opinión, nuestra guía</h1>
+        <h2 className="shops-section__subtitle">
+          Porque las mejores elecciones nacen de experiencias compartidas
+        </h2>
+        <div className="coffee__list">{rooftopsList()}</div>
+      </div>
     </>
   );
 }

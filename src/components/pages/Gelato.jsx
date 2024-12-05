@@ -17,13 +17,38 @@ function Gelato() {
       return <ShopItem key={gelato.name} shop={gelato} />;
     });
   }
+  function renderLogos() {
+    return gelatos.map((gelato) => {
+      return (
+        <a href={`#shop-${gelato.id_shop}`}>
+          <img
+            className="logos__breweries"
+            src={`/logos/${gelato.logo_url}`}
+            alt={gelato.name}
+          />
+        </a>
+      );
+    });
+  }
   return (
     <>
       <Hero
         text={"Los mejores lugares para disfrutar gelato artesanal cerca de ti"}
         className="hero__gelato"
       />
-      <div className="coffee__list">{gelatoList()}</div>
+      <div className="logos">
+        <div className="logos__title">Conoce las mejores Gelaterias</div>
+        <div className="logos__info">{renderLogos()}</div>
+      </div>
+      <div className="shops-section">
+        <h1 className="shops-section__title">
+          Momentos que valen la pena compartir
+        </h1>
+        <h2 className="shops-section__subtitle">
+          Las experiencias más memorables, contadas por otros
+        </h2>
+        <div className="coffee__list">{gelatoList()}</div>
+      </div>
     </>
   );
 }

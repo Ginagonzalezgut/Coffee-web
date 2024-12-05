@@ -16,7 +16,24 @@ function SpecialtyCoffeeShops() {
 
   function coffeeShopList() {
     return coffeeShops.map((coffeeShop) => {
-      return <ShopItem key={coffeeShop.id_shop} shop={coffeeShop} />;
+      return (
+        <div key={coffeeShop.id_shop}>
+          <ShopItem shop={coffeeShop} />
+        </div>
+      );
+    });
+  }
+  function renderLogos() {
+    return coffeeShops.map((coffeeShop) => {
+      return (
+        <a href={`#shop-${coffeeShop.id_shop}`}>
+          <img
+            className="logos__breweries"
+            src={`/logos/${coffeeShop.logo_url}`}
+            alt={coffeeShop.name}
+          />
+        </a>
+      );
     });
   }
 
@@ -26,8 +43,17 @@ function SpecialtyCoffeeShops() {
         text="Descubre el arte del café de especialidad, donde cada taza cuenta una historia."
         className="hero__coffee"
       />
-
-      <div className="coffee__list">{coffeeShopList()}</div>
+      <div className="logos">
+        <div className="logos__title">Conoce las mejores Cafeterias</div>
+        <div className="logos__info">{renderLogos()}</div>
+      </div>
+      <div className="shops-section">
+        <h1 className="shops-section__title">Historias que cuentan más...</h1>
+        <h2 className="shops-section__subtitle">
+          Porque cada experiencia tiene algo especial que decir.
+        </h2>
+        <div className="coffee__list">{coffeeShopList()}</div>
+      </div>
     </>
   );
 }

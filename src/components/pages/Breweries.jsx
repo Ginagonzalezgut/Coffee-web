@@ -43,7 +43,15 @@ function Breweries({ shop }) {
         <div className="logos__info">{renderLogos()}</div>
       </div>
 
-      <div className="coffee__list"> {breweryList()}</div>
+      <div className="shops-section">
+        <h1 className="shops-section__title">
+          Ellos ya vivieron la experiencia...
+        </h1>
+        <h2 className="shops-section__subtitle">
+          Descubre sus historias y prepárate para la tuya
+        </h2>
+        <div className="coffee__list">{breweryList()}</div>
+      </div>
     </>
   );
 }

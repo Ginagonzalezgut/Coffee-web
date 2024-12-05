@@ -75,3 +75,16 @@
     margin-bottom: 10px;
   }
 }
+.shops-section {
+  background-color: #efe9e0;
+  &__title {
+    padding-top: 50px;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 200;
+  }
+  &__subtitle {
+    text-align: center;
+    font-weight: 200;
+  }
+}

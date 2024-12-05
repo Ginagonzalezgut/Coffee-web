@@ -17,6 +17,19 @@ function LargeGroups() {
       return <ShopItem key={restaurant.name} shop={restaurant} />;
     });
   }
+  function renderLogos() {
+    return restaurants.map((restaurant) => {
+      return (
+        <a href={`#shop-${restaurant.id_shop}`}>
+          <img
+            className="logos__breweries"
+            src={`/logos/${restaurant.logo_url}`}
+            alt={restaurant.name}
+          />
+        </a>
+      );
+    });
+  }
   return (
     <>
       <Hero
@@ -25,7 +38,19 @@ function LargeGroups() {
         }
         className="hero__large-groups"
       />
-      <div className="coffee__list">{listLargeGroups()}</div>;
+      <div className="logos">
+        <div className="logos__title">
+          Conoce los mejores restaurantes para grupos
+        </div>
+        <div className="logos__info">{renderLogos()}</div>
+      </div>
+      <div className="shops-section">
+        <h1 className="shops-section__title">Lo que otros descubrieron</h1>
+        <h2 className="shops-section__subtitle">
+          Opiniones honestas para ayudarte a decidir
+        </h2>
+        <div className="coffee__list">{listLargeGroups()}</div>;
+      </div>
     </>
   );
 }
