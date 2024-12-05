@@ -3,7 +3,7 @@ import "../../scss/components/ShopItem.scss";
 
 function ShopItem({ shop }) {
   return (
-    <div className="shopItem" key={shop.id_shop}>
+    <div className="shopItem" key={shop.id_shop} id={`shop-${shop.id_shop}`}>
       <img
         className="shopItem__cover"
         src={`/cover/${shop.cover}`}
