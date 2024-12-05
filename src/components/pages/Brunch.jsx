@@ -3,6 +3,7 @@ import "../../scss/components/ShopItem.scss";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import Hero from "../partials/Hero";
+import LogoCarousel from "../partials/LogoCarousel";
 
 function Brunch() {
   const [brunches, setBrunches] = useState([]);
@@ -22,7 +23,7 @@ function Brunch() {
       return (
         <a href={`#shop-${brunch.id_shop}`}>
           <img
-            className="logos__breweries"
+            className="logos__carousel__item"
             src={`/logos/${brunch.logo_url}`}
             alt={brunch.name}
           />
@@ -39,9 +40,7 @@ function Brunch() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Brunch</div>
-        <div className="logos__info">
-          <div className="logos__list">{renderLogos()}</div>
-        </div>
+        <LogoCarousel renderLogos={renderLogos} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Lo que ellos piensan</h1>

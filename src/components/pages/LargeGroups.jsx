@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import Hero from "../partials/Hero";
+import LogoCarousel from "../partials/LogoCarousel";
 
 function LargeGroups() {
   const [restaurants, setRestaurants] = useState([]);
@@ -42,9 +43,7 @@ function LargeGroups() {
         <div className="logos__title">
           Conoce Los Mejores Restaurantes Para Grupos
         </div>
-        <div className="logos__info">
-          <div className="logos__list">{renderLogos()}</div>
-        </div>
+        <LogoCarousel renderLogos={renderLogos} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Lo que otros descubrieron</h1>

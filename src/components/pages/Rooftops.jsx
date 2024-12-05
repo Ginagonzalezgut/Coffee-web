@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import Hero from "../partials/Hero";
+import LogoCarousel from "../partials/LogoCarousel";
 
 function Rooftops() {
   const [rooftops, setRooftops] = useState([]);
@@ -22,7 +23,7 @@ function Rooftops() {
       return (
         <a href={`#shop-${rooftop.id_shop}`}>
           <img
-            className="logos__breweries"
+            className="logos__carousel__item"
             src={`/logos/${rooftop.logo_url}`}
             alt={rooftop.name}
           />
@@ -38,9 +39,7 @@ function Rooftops() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Rooftops</div>
-        <div className="logos__info">
-          <div className="logos__list">{renderLogos()}</div>
-        </div>
+        <LogoCarousel renderLogos={renderLogos} />
       </div>
 
       <div className="shops-section">

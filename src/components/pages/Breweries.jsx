@@ -3,6 +3,7 @@ import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
 import "../../scss/components/ShopItem.scss";
 import Hero from "../partials/Hero";
+import LogoCarousel from "../partials/LogoCarousel";
 
 function Breweries({ shop }) {
   const [breweries, setBreweries] = useState([]);
@@ -23,7 +24,7 @@ function Breweries({ shop }) {
       return (
         <a href={`#shop-${brewery.id_shop}`}>
           <img
-            className="logos__breweries"
+            className="logos__carousel__item"
             src={`/logos/${brewery.logo_url}`}
             alt={brewery.name}
           />
@@ -40,9 +41,7 @@ function Breweries({ shop }) {
       />
       <div className="logos">
         <div className="logos__title">Conoce Las Mejores Cervecerías</div>
-        <div className="logos__info">
-          <div className="logos__list">{renderLogos()}</div>
-        </div>
+        <LogoCarousel renderLogos={renderLogos} />
       </div>
 
       <div className="shops-section">

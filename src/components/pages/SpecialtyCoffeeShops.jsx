@@ -4,6 +4,7 @@ import ShopItem from "../partials/ShopItem";
 import "../../scss/components/SpecialtyCoffeeShops.scss";
 import "../../scss/components/ShopItem.scss";
 import Hero from "../partials/Hero";
+import LogoCarousel from "../partials/LogoCarousel";
 
 function SpecialtyCoffeeShops() {
   const [coffeeShops, setCoffeeShops] = useState([]);
@@ -28,7 +29,7 @@ function SpecialtyCoffeeShops() {
       return (
         <a href={`#shop-${coffeeShop.id_shop}`}>
           <img
-            className="logos__breweries"
+            className="logos__carousel__item"
             src={`/logos/${coffeeShop.logo_url}`}
             alt={coffeeShop.name}
           />
@@ -47,9 +48,7 @@ function SpecialtyCoffeeShops() {
         <div className="logos__title">
           Conoce Las Mejores Cafeterías de Especialidad
         </div>
-        <div className="logos__info">
-          <div className="logos__list">{renderLogos()}</div>
-        </div>
+        <LogoCarousel renderLogos={renderLogos} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Historias que cuentan más...</h1>
