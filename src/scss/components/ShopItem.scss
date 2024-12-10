@@ -79,12 +79,21 @@
   background-color: #efe9e0;
   &__title {
     padding-top: 50px;
-    font-size: 64px;
+    font-size: 32px;
     text-align: center;
     font-weight: 200;
+
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
   }
   &__subtitle {
     text-align: center;
     font-weight: 200;
+    font-size: 23px;
+
+    @media (min-width: 768px) {
+      font-size: 64px;
+    }
   }
 }
