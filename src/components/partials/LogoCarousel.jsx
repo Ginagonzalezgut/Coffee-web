@@ -1,4 +1,16 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../scss/components/LogoCarousel.scss";
+
 function LogoCarousel({ shops }) {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+  };
   function RenderLogos(shops) {
     return shops.map((shop) => {
       return (
@@ -14,17 +26,7 @@ function LogoCarousel({ shops }) {
   }
   return (
     <div className="logos__carousel">
-      <div className="logos__carousel__scrollable">
-        <div className="logos__carousel__list">{RenderLogos(shops)}</div>
-      </div>
-      <div className="logos__carousel__nav">
-        <button className="logos__carousel__nav__control">
-          <i className="fa-solid fa-chevron-left"></i>
-        </button>
-        <button className="logos__carousel__nav__control">
-          <i className="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
+      <Slider {...settings}>{RenderLogos(shops)}</Slider>
     </div>
   );
 }
