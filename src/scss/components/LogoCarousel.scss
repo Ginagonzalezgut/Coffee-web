@@ -1,7 +1,6 @@
 .logos__carousel {
   background-color: #eed6c1;
   position: relative;
-  padding-block: 48px;
 
   @media (min-width: 768px) {
     padding-bottom: 0;
@@ -9,15 +8,37 @@
   }
 
   &__item {
-    margin: 20px;
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    margin-left: 40px;
     transition: transform 0.3s ease;
+    margin: auto;
 
     &:hover {
       transform: scale(1.4);
     }
+  }
+
+  .slick-slider {
+    padding-block: 78px;
+
+    @media (min-width: 768px) {
+      padding-block: 77px;
+    }
+  }
+  .slick-arrow {
+    transform: none;
+    bottom: 10%;
+    top: auto;
+  }
+
+  .slick-prev {
+    left: 45%;
+  }
+  .slick-next {
+    right: 45%;
+  }
+  .slick-list {
+    padding-block: 21px;
   }
 }
