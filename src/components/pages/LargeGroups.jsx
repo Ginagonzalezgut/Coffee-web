@@ -18,19 +18,7 @@ function LargeGroups() {
       return <ShopItem key={restaurant.name} shop={restaurant} />;
     });
   }
-  function renderLogos() {
-    return restaurants.map((restaurant) => {
-      return (
-        <a href={`#shop-${restaurant.id_shop}`}>
-          <img
-            className="logos__breweries"
-            src={`/logos/${restaurant.logo_url}`}
-            alt={restaurant.name}
-          />
-        </a>
-      );
-    });
-  }
+
   return (
     <>
       <Hero
@@ -43,7 +31,7 @@ function LargeGroups() {
         <div className="logos__title">
           Conoce Los Mejores Restaurantes Para Grupos
         </div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={restaurants} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Lo que otros descubrieron</h1>

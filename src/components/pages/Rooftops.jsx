@@ -18,19 +18,7 @@ function Rooftops() {
       return <ShopItem key={rooftop.name} shop={rooftop} />;
     });
   }
-  function renderLogos() {
-    return rooftops.map((rooftop) => {
-      return (
-        <a href={`#shop-${rooftop.id_shop}`}>
-          <img
-            className="logos__carousel__item"
-            src={`/logos/${rooftop.logo_url}`}
-            alt={rooftop.name}
-          />
-        </a>
-      );
-    });
-  }
+
   return (
     <>
       <Hero
@@ -39,7 +27,7 @@ function Rooftops() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Rooftops</div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={rooftops} />
       </div>
 
       <div className="shops-section">

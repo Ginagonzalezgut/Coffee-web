@@ -24,19 +24,6 @@ function SpecialtyCoffeeShops() {
       );
     });
   }
-  function renderLogos() {
-    return coffeeShops.map((coffeeShop) => {
-      return (
-        <a href={`#shop-${coffeeShop.id_shop}`}>
-          <img
-            className="logos__carousel__item"
-            src={`/logos/${coffeeShop.logo_url}`}
-            alt={coffeeShop.name}
-          />
-        </a>
-      );
-    });
-  }
 
   return (
     <>
@@ -48,7 +35,7 @@ function SpecialtyCoffeeShops() {
         <div className="logos__title">
           Conoce Las Mejores Cafeterías de Especialidad
         </div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={coffeeShops} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Historias que cuentan más...</h1>

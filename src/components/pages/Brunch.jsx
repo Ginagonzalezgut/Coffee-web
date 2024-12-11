@@ -18,19 +18,6 @@ function Brunch() {
       return <ShopItem key={brunch.name} shop={brunch} />;
     });
   }
-  function renderLogos() {
-    return brunches.map((brunch) => {
-      return (
-        <a href={`#shop-${brunch.id_shop}`}>
-          <img
-            className="logos__carousel__item"
-            src={`/logos/${brunch.logo_url}`}
-            alt={brunch.name}
-          />
-        </a>
-      );
-    });
-  }
 
   return (
     <>
@@ -40,7 +27,7 @@ function Brunch() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Los Mejores Brunch</div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={brunches} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">Lo que ellos piensan</h1>

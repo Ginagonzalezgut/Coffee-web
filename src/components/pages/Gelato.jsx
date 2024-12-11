@@ -18,19 +18,7 @@ function Gelato() {
       return <ShopItem key={gelato.name} shop={gelato} />;
     });
   }
-  function renderLogos() {
-    return gelatos.map((gelato) => {
-      return (
-        <a href={`#shop-${gelato.id_shop}`}>
-          <img
-            className="logos__carousel__item"
-            src={`/logos/${gelato.logo_url}`}
-            alt={gelato.name}
-          />
-        </a>
-      );
-    });
-  }
+
   return (
     <>
       <Hero
@@ -39,7 +27,7 @@ function Gelato() {
       />
       <div className="logos">
         <div className="logos__title">Conoce Las Mejores Gelaterias</div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={gelatos} />
       </div>
       <div className="shops-section">
         <h1 className="shops-section__title">

@@ -5,7 +5,7 @@ import "../../scss/components/ShopItem.scss";
 import Hero from "../partials/Hero";
 import LogoCarousel from "../partials/LogoCarousel";
 
-function Breweries({ shop }) {
+function Breweries() {
   const [breweries, setBreweries] = useState([]);
 
   useEffect(() => {
@@ -19,19 +19,6 @@ function Breweries({ shop }) {
       return <ShopItem key={brewery.name} shop={brewery} />;
     });
   }
-  function renderLogos() {
-    return breweries.map((brewery) => {
-      return (
-        <a href={`#shop-${brewery.id_shop}`}>
-          <img
-            className="logos__carousel__item"
-            src={`/logos/${brewery.logo_url}`}
-            alt={brewery.name}
-          />
-        </a>
-      );
-    });
-  }
 
   return (
     <>
@@ -41,7 +28,7 @@ function Breweries({ shop }) {
       />
       <div className="logos">
         <div className="logos__title">Conoce Las Mejores Cervecerías</div>
-        <LogoCarousel renderLogos={renderLogos} />
+        <LogoCarousel shops={breweries} />
       </div>
 
       <div className="shops-section">
