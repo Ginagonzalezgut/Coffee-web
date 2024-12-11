@@ -79,12 +79,12 @@
   background-color: #efe9e0;
   &__title {
     padding-top: 50px;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     font-weight: 200;
     margin-bottom: 15px;
     font-weight: 400;
-
+    padding-inline: 12px;
     @media (min-width: 768px) {
       font-size: 64px;
     }
@@ -93,7 +93,7 @@
     text-align: center;
     font-weight: 200;
     font-size: 23px;
-    padding-inline: 45px;
+    padding-inline: 12px;
 
     @media (min-width: 768px) {
       font-size: 32px;
