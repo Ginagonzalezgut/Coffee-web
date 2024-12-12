@@ -33,10 +33,17 @@
   }
 
   .slick-prev {
-    left: 45%;
+    left: 40%;
+
+    @media (min-width: 1200px) {
+      left: 45%;
+    }
   }
   .slick-next {
-    right: 45%;
+    right: 40%;
+    @media (min-width: 1200px) {
+      right: 45%;
+    }
   }
   .slick-list {
     padding-block: 21px;
