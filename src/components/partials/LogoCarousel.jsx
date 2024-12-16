@@ -19,6 +19,9 @@ function LogoCarousel({ shops }) {
             className="logos__carousel__item"
             src={`/logos/${shop.logo_url}`}
             alt={shop.name}
+            style={{
+              backgroundColor: `#${shop.color}`,
+            }}
           />
         </a>
       );
