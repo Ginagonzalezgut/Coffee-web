@@ -104,7 +104,7 @@ function Header() {
         )}
 
         <div className="header__icon" onClick={openMenu}>
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </div>
       </header>
     </>

@@ -16,7 +16,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div>
+    <>
       {location.pathname === "/register" ||
       location.pathname === "/login" ? null : (
         <Header />
@@ -36,7 +36,7 @@ function App() {
         <Route path="/rooftops" element={<Rooftops />} />
       </Routes>
       {location.pathname === "/register" || "/login" ? null : <Footer />}
-    </div>
+    </>
   );
 }
 

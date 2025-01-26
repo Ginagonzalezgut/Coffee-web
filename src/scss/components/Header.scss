@@ -1,13 +1,13 @@
 .header {
+  align-items: center;
+  background-color: #f9f2e2;
+  border-bottom: 1px solid #ece5d5;
+  color: #362c2a;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: 80px;
-  background-color: white;
+  justify-content: space-between;
   padding-inline: 24px;
-  align-items: center;
-  font-size: 14px;
-  font-weight: bold;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -18,7 +18,7 @@
 
   &__signup {
     width: 104px;
-    background-color: #045e3e;
+    background-color: #362c2a;
     border-radius: 16px;
     color: white;
     text-align: center;

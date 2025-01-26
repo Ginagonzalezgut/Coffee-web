@@ -1,127 +1,38 @@
 .homepage-hero {
+  background-color: #ffd44f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px;
+  padding: 48px 24px;
   justify-content: center;
+  text-align: center;
 
   @media (min-width: 768px) {
-    padding-block: 48px;
+    padding-block: 160px;
   }
 
   &__title {
-    color: #045e3e;
+    color: #322304;
     font-size: 32px;
     letter-spacing: -1.12px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Mona Sans", sans-serif;
     font-weight: 400;
-    line-height: 32px;
-    text-align: center;
+    line-height: 1;
+    margin-bottom: 16px;
 
     @media (min-width: 768px) {
       font-size: 62px;
       max-width: 800px;
-      margin-block: 42px;
-      line-height: 64px;
+      margin-bottom: 42px;
     }
   }
   &__subtitle {
-    text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    font-family: "Mulish";
 
     @media (min-width: 768px) {
       font-size: 24px;
-
-      font-size: 30px;
-      color: black;
-      margin-bottom: 30px;
-      letter-spacing: 0.5px;
-      font-weight: 200;
       line-height: 1.5;
     }
-  }
-}
-.categories {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(6, 234px);
-  gap: 16px;
-  max-width: 1280px;
-  margin: 24px auto 72px;
-  padding-inline: 16px;
-
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 234px);
-  }
-
-  @media (min-width: 1280px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 234px);
-    gap: 16px;
-  }
-
-  a {
-    border-radius: 10px;
-    color: white;
-    font-family: Teko, sans-serif;
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    line-height: 1;
-    text-align: center;
-    transition: transform 0.12s linear;
-
-    @media (min-width: 768px) {
-      font-size: 48px;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: transparentize($color: #000000, $amount: 0.7);
-    }
-
-    &:hover {
-      transform: scale(105%);
-    }
-  }
-
-  &__text {
-    max-width: 50%;
-    position: relative;
-    z-index: 1;
-  }
-
-  &__specialty-coffee-shops {
-    background-image: url(/categories/specialty-coffee-shops.jpg);
-    background-size: cover;
-  }
-  &__brunch {
-    background-image: url(/categories/brunch.jpg);
-    background-size: cover;
-  }
-  &__breweries {
-    background-image: url(/categories/breweries.jpg);
-    background-size: cover;
-  }
-  &__large-groups {
-    background-image: url(/categories/large-groups.jpg);
-    background-size: cover;
-  }
-  &__rooftops {
-    background-image: url(/categories/rooftops2.jpg);
-    background-size: cover;
-  }
-  &__gelato {
-    background-image: url(/categories/gelato.jpg);
-    background-size: cover;
   }
 }
