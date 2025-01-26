@@ -1,24 +1,30 @@
 .homepage-hero {
   background-color: #ffd44f;
+  background-image: url(../../../public/categories/barcelona.jpg);
+  background-size: cover;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 48px 24px;
   justify-content: center;
   text-align: center;
+  position: relative;
 
   @media (min-width: 768px) {
     padding-block: 160px;
   }
 
   &__title {
-    color: #322304;
     font-size: 32px;
     letter-spacing: -1.12px;
     font-family: "Mona Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1;
     margin-bottom: 16px;
+    position: relative;
+    text-transform: capitalize;
+    z-index: 2;
 
     @media (min-width: 768px) {
       font-size: 62px;
@@ -29,10 +35,22 @@
   &__subtitle {
     font-size: 14px;
     font-weight: 400;
+    position: relative;
+    z-index: 2;
 
     @media (min-width: 768px) {
       font-size: 24px;
       line-height: 1.5;
     }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
   }
 }

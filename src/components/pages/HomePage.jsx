@@ -53,6 +53,7 @@ function HomePage() {
   return (
     <>
       <div className="homepage-hero">
+        <div className="homepage-hero__overlay"></div>
         <h1 className="homepage-hero__title">
           Descubre los mejores spots de Barcelona
         </h1>
