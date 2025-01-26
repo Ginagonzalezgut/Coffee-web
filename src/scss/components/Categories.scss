@@ -1,0 +1,91 @@
+.homepage-categories {
+  padding: 24px 16px;
+  margin: auto;
+  max-width: 1280px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 80px 16px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 234px);
+    margin: auto;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 234px);
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 234px);
+      gap: 16px;
+    }
+
+    &-item {
+      border-radius: 10px;
+      color: white;
+      font-family: Teko, sans-serif;
+      font-size: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      line-height: 1;
+      text-align: center;
+      transition: transform 0.12s linear;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparentize($color: #000000, $amount: 0.7);
+      }
+
+      &:hover {
+        transform: scale(105%);
+      }
+
+      @media (min-width: 768px) {
+        font-size: 48px;
+      }
+
+      &__text {
+        max-width: 50%;
+        position: relative;
+        z-index: 1;
+      }
+
+      &--specialty-coffee-shops {
+        background-image: url(/categories/specialty-coffee-shops.jpg);
+        background-size: cover;
+      }
+      &--brunch {
+        background-image: url(/categories/brunch.jpg);
+        background-size: cover;
+      }
+      &--breweries {
+        background-image: url(/categories/breweries.jpg);
+        background-size: cover;
+      }
+      &--large-groups {
+        background-image: url(/categories/large-groups.jpg);
+        background-size: cover;
+      }
+      &--rooftops {
+        background-image: url(/categories/rooftops2.jpg);
+        background-size: cover;
+      }
+      &--gelato {
+        background-image: url(/categories/gelato.jpg);
+        background-size: cover;
+      }
+    }
+  }
+}
