@@ -77,8 +77,11 @@
 }
 .shops-section {
   &__title {
+    font-family: "Mona Sans", sans-serif;
     padding-top: 50px;
-    font-size: 28px;
+    color: #322304;
+    font-size: 32px;
+    letter-spacing: -1.12px;
     text-align: center;
     font-weight: 200;
     margin-bottom: 15px;
