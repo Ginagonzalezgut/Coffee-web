@@ -60,6 +60,15 @@ function HomePage() {
         <h2 className="homepage-hero__subtitle">
           Encuentra los lugares perfectos para cada plan
         </h2>
+        <div className="homepage-hero__buttons">
+          {" "}
+          <Link className="homepage-hero__button" to="/login">
+            Iniciar Sesión
+          </Link>
+          <Link className="homepage-hero__button secondary" to="/register">
+            Registrarse
+          </Link>
+        </div>
       </div>
       <div className="homepage-categories">
         <div className="homepage-categories__grid">{categoryElements}</div>

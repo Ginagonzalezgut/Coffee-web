@@ -1,19 +1,14 @@
 .homepage-hero {
-  background-color: #ffd44f;
   background-image: url(../../../public/categories/barcelona.jpg);
   background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 24px;
+  padding: 160px 24px;
   justify-content: center;
   text-align: center;
   position: relative;
-
-  @media (min-width: 768px) {
-    padding-block: 160px;
-  }
 
   &__title {
     font-size: 32px;
@@ -29,7 +24,7 @@
     @media (min-width: 768px) {
       font-size: 62px;
       max-width: 800px;
-      margin-bottom: 42px;
+      margin-bottom: 32px;
     }
   }
   &__subtitle {
@@ -37,9 +32,10 @@
     font-weight: 400;
     position: relative;
     z-index: 2;
+    margin-bottom: 30px;
 
     @media (min-width: 768px) {
-      font-size: 24px;
+      font-size: 18px;
       line-height: 1.5;
     }
   }
@@ -52,5 +48,39 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
+  }
+  &__buttons {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+  &__button {
+    background-color: #045e3e;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 8px 16px;
+    position: relative;
+    z-index: 2;
+    padding: 15px 23px;
+    font-weight: 700;
+    &.secondary {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
   }
 }
