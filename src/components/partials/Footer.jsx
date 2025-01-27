@@ -3,8 +3,10 @@ import "../../scss/components/Footer.scss";
 
 function Footer() {
   return (
-    <div className="footer">
-      <h1 className="footer__info">© 2024, All rights reserved</h1>
+    <div className="footer__container">
+      <div className="footer">
+        <span className="footer__copyright">© 2024, All rights reserved</span>
+      </div>
     </div>
   );
 }
