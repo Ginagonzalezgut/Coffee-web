@@ -27,7 +27,6 @@ function Breweries() {
         text="Donde las cervezas cuentan historias y los momentos saben mejor"
       />
       <div className="logos">
-        <div className="logos__title">Conoce Las Mejores Cervecerías</div>
         <LogoCarousel shops={breweries} />
       </div>
 

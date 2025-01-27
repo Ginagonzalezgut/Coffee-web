@@ -26,7 +26,6 @@ function Rooftops() {
         className="hero__rooftops"
       />
       <div className="logos">
-        <div className="logos__title">Conoce Los Mejores Rooftops</div>
         <LogoCarousel shops={rooftops} />
       </div>
 
