@@ -19,25 +19,24 @@
     line-height: 1;
     margin-bottom: 16px;
     position: relative;
-    text-transform: capitalize;
     z-index: 2;
 
     @media (min-width: 768px) {
       font-size: 62px;
-      max-width: 800px;
+      max-width: 900px;
       margin-bottom: 32px;
     }
   }
   &__subtitle {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
 
     @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 1.5;
+      font-size: 28px;
+      line-height: 1.42;
     }
   }
 
@@ -73,6 +72,7 @@
     z-index: 2;
     padding: 15px 23px;
     font-weight: 700;
+
     &.secondary {
       background-color: transparent;
       border: 1px solid white;

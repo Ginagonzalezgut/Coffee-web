@@ -56,7 +56,7 @@ function HomePage() {
       <div className="homepage-hero">
         <div className="homepage-hero__overlay"></div>
         <h1 className="homepage-hero__title">
-          Descubre los mejores spots de Barcelona
+          Descubre los Mejores Spots de Barcelona
         </h1>
         <h2 className="homepage-hero__subtitle">
           Encuentra los lugares perfectos para cada plan
@@ -73,14 +73,10 @@ function HomePage() {
       </div>
       <Facts />
       <div className="homepage-categories">
-        <div className="homepage-categories__intro">
-          <h2 className="homepage-categories__title">
-            Guía de restaurantes imprescindibles
-          </h2>
-          <p className="homepage-categories__subtitle">
-            Hemos probado y seleccionado los mejores para ti
-          </p>
-        </div>
+        <h1 className="homepage-categories__title">Categorías</h1>
+        <h2 className="homepage-categories__tagline">
+          Explora nuestras recomendaciones
+        </h2>
 
         <div className="homepage-categories__grid">{categoryElements}</div>
       </div>
