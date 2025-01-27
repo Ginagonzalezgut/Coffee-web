@@ -26,7 +26,6 @@ function Brunch() {
         className="hero__brunch"
       />
       <div className="logos">
-        <div className="logos__title">Conoce Los Mejores Brunch</div>
         <LogoCarousel shops={brunches} />
       </div>
       <div className="shops-section">

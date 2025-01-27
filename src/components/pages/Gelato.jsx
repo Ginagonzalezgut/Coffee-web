@@ -26,7 +26,6 @@ function Gelato() {
         className="hero__gelato"
       />
       <div className="logos">
-        <div className="logos__title">Conoce Las Mejores Gelaterias</div>
         <LogoCarousel shops={gelatos} />
       </div>
       <div className="shops-section">

@@ -51,27 +51,19 @@
     background-image: url(../../../public/categories/coffee2.jpg);
   }
   &__brunch {
-    background-image: url(../../../public/categories/brunch.jpg);
+    background-image: url(../../../public/categories/brunch2.jpg);
   }
   &__breweries {
-    .hero__background {
-      background-image: url(../../../public/categories/breweries2.jpg);
-    }
+    background-image: url(../../../public/categories/breweries2.jpg);
   }
   &__gelato {
-    .hero__background {
-      background-image: url(../../../public/categories/gelatobackground2.jpg);
-    }
+    background-image: url(../../../public/categories/gelatobackground2.jpg);
   }
   &__large-groups {
-    .hero__background {
-      background-image: url(../../../public//categories/largegroups.jpg);
-    }
+    background-image: url(../../../public//categories/largegroups.jpg);
   }
   &__rooftops {
-    .hero__background {
-      background-image: url(../../../public//categories/rooftops3.jpg);
-    }
+    background-image: url(../../../public//categories/rooftops3.jpg);
   }
 }
 
@@ -174,23 +166,5 @@
   @media (min-width: 768px) {
     flex-direction: row;
     height: 300px;
-  }
-
-  &__title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-color: #bc480f;
-    color: black;
-    font-size: 32px;
-    padding-inline: 48px;
-    flex-shrink: 0;
-    padding: 100px 64px;
-
-    @media (min-width: 768px) {
-      font-size: 40px;
-      width: 50%;
-    }
   }
 }
