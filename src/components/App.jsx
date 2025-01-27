@@ -35,7 +35,10 @@ function App() {
         <Route path="/brunch" element={<Brunch />} />
         <Route path="/rooftops" element={<Rooftops />} />
       </Routes>
-      {location.pathname === "/register" || "/login" ? null : <Footer />}
+      {location.pathname === "/register" ||
+      location.pathname === "/login" ? null : (
+        <Footer />
+      )}
     </>
   );
 }

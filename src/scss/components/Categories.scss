@@ -7,7 +7,17 @@
   @media (min-width: 768px) {
     padding: 80px 16px;
   }
-
+  &__intro {
+    text-align: center;
+  }
+  &__title {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
   &__grid {
     display: grid;
     gap: 16px;

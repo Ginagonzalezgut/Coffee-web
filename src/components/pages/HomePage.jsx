@@ -2,6 +2,7 @@ import React from "react";
 import "../../scss/components/HomePage.scss";
 import "../../scss/components/Categories.scss";
 import { Link } from "react-router-dom";
+import Facts from "./Facts";
 
 function HomePage() {
   const categories = [
@@ -70,7 +71,17 @@ function HomePage() {
           </Link>
         </div>
       </div>
+      <Facts />
       <div className="homepage-categories">
+        <div className="homepage-categories__intro">
+          <h2 className="homepage-categories__title">
+            Guía de restaurantes imprescindibles
+          </h2>
+          <p className="homepage-categories__subtitle">
+            Hemos probado y seleccionado los mejores para ti
+          </p>
+        </div>
+
         <div className="homepage-categories__grid">{categoryElements}</div>
       </div>
     </>
