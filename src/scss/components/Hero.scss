@@ -1,92 +1,74 @@
 .hero {
-  &__background {
-    background-size: cover;
-    height: 320px;
-    background-position: center;
-    width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.6;
   }
 
   &__title {
-    color: #045e3e;
-    font-size: 24px;
+    color: #ffffff;
+    font-size: 16px;
     letter-spacing: 1px;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "Mona Sans", sans-serif;
     font-weight: 400;
     line-height: 32px;
-    text-align: center;
-    margin: auto;
-    padding: 75px 32px;
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    text-align: left;
+    padding: 40px 16px;
 
     @media (min-width: 768px) {
-      font-size: 62px;
+      font-size: 32px;
       line-height: 64px;
-      padding: 140px 64px;
     }
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.333;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
   }
 
   &__coffee {
-    background-color: #6f4f28;
-    .hero__title {
-      color: white;
-      animation: desvanecer 8s ease-in-out infinite;
-    }
-    .hero__background {
-      background-image: url(../../../public/categories/coffee2.jpg);
-    }
+    background-image: url(../../../public/categories/coffee2.jpg);
   }
   &__brunch {
-    background-color: #2e3b2d;
-    .hero__title {
-      animation: aumentarDisminuir 8s ease-in-out infinite;
-      color: #fff;
-    }
-    .hero__background {
-      background-image: url(../../../public/categories/brunch.jpg);
-    }
+    background-image: url(../../../public/categories/brunch.jpg);
   }
   &__breweries {
-    background-color: #0d0d0d;
-    .hero__title {
-      animation: entrarYSalir 8s ease-in-out infinite;
-      color: #e3a857;
-    }
     .hero__background {
       background-image: url(../../../public/categories/breweries2.jpg);
     }
   }
   &__gelato {
-    background-color: #4f6a2f;
-    .hero__title {
-      color: #fdf6e3;
-      animation: rebote 8s ease-out infinite;
-    }
-
     .hero__background {
       background-image: url(../../../public/categories/gelatobackground2.jpg);
     }
   }
   &__large-groups {
-    background-color: #4a4a4a;
-    .hero__title {
-      color: #eeeedd;
-      animation: cambiarColor 8s infinite ease-in-out;
-    }
     .hero__background {
       background-image: url(../../../public//categories/largegroups.jpg);
     }
   }
   &__rooftops {
-    background-color: #2c3e50;
-    .hero__title {
-      color: #ffd700;
-
-      @media (min-width: 768px) {
-        animation: typing 4s steps(20, end) 1s,
-          blink 0.5s step-end infinite alternate;
-        white-space: nowrap;
-        overflow: hidden;
-      }
-    }
     .hero__background {
       background-image: url(../../../public//categories/rooftops3.jpg);
     }

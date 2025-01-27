@@ -1,10 +1,10 @@
 .logos__carousel {
-  background-color: #eed6c1;
+  background-color: #323231;
   position: relative;
+  width: 100%;
 
   @media (min-width: 768px) {
     padding-bottom: 0;
-    width: 50%;
   }
 
   &__item {

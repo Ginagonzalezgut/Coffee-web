@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../../services/api";
 import ShopItem from "../partials/ShopItem";
-import "../../scss/components/SpecialtyCoffeeShops.scss";
 import "../../scss/components/ShopItem.scss";
 import Hero from "../partials/Hero";
 import LogoCarousel from "../partials/LogoCarousel";
@@ -27,14 +26,11 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <Hero
-        text="Descubre el arte del café de especialidad, donde cada taza cuenta una historia."
-        className="hero__coffee"
-      />
+      <Hero text="Cada taza cuenta una historia" className="hero__coffee" />
       <div className="logos">
-        <div className="logos__title">
+        {/* <div className="logos__title">
           Conoce Las Mejores Cafeterías de Especialidad
-        </div>
+        </div> */}
         <LogoCarousel shops={coffeeShops} />
       </div>
       <div className="shops-section">

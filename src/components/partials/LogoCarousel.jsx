@@ -8,8 +8,8 @@ function LogoCarousel({ shops }) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
   };
   function RenderLogos(shops) {
     return shops.map((shop) => {
