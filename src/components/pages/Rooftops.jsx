@@ -24,6 +24,7 @@ function Rooftops() {
       <Hero
         text="Tu próxima aventura comienza en las alturas"
         className="hero__rooftops"
+        subtitle="Rooftops"
       />
       <div className="logos">
         <LogoCarousel shops={rooftops} />

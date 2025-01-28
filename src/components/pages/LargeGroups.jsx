@@ -22,8 +22,9 @@ function LargeGroups() {
   return (
     <>
       <Hero
-        text={"Conoce Los Mejores Restaurantes Para Grupos"}
+        text="Conoce Los Mejores Restaurantes Para Grupos"
         className="hero__large-groups"
+        subtitle="Para Grupos Grandes"
       />
       <div className="logos">
         <LogoCarousel shops={restaurants} />

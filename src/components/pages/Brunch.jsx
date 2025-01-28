@@ -23,6 +23,7 @@ function Brunch() {
     <>
       <Hero
         text="Sabores que despiertan tus mañanas y momentos que alegran tu día"
+        subtitle="Brunch"
         className="hero__brunch"
       />
       <div className="logos">

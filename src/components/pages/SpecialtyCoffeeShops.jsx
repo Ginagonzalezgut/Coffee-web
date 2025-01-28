@@ -26,11 +26,12 @@ function SpecialtyCoffeeShops() {
 
   return (
     <>
-      <Hero text="Cada taza cuenta una historia" className="hero__coffee" />
+      <Hero
+        text="Cada taza cuenta una historia"
+        subtitle="Cafaterías de especialidad"
+        className="hero__coffee"
+      />
       <div className="logos">
-        {/* <div className="logos__title">
-          Conoce Las Mejores Cafeterías de Especialidad
-        </div> */}
         <LogoCarousel shops={coffeeShops} />
       </div>
       <div className="shops-section">

@@ -25,6 +25,7 @@ function Breweries() {
       <Hero
         className="hero__breweries"
         text="Donde las cervezas cuentan historias y los momentos saben mejor"
+        subtitle="Cervecerías"
       />
       <div className="logos">
         <LogoCarousel shops={breweries} />

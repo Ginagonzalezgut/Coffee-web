@@ -24,6 +24,7 @@ function Gelato() {
       <Hero
         text={"Los mejores lugares para disfrutar gelato artesanal cerca de ti"}
         className="hero__gelato"
+        subtitle="Gelato"
       />
       <div className="logos">
         <LogoCarousel shops={gelatos} />
