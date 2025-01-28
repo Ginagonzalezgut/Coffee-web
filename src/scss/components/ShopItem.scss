@@ -17,7 +17,6 @@
 .shopItem {
   display: flex;
   flex-direction: column;
-  background-color: white;
   border: 1px solid #cfcfcf;
 
   &__cover {
@@ -43,7 +42,7 @@
   &__description {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 
     border-top: 1px solid #dedede;
     padding: 20px;
@@ -53,20 +52,30 @@
 
     @media (min-width: 768px) {
       padding: 20px;
-      padding-top: 40px;
-      height: 200px;
+      padding-top: 60px;
+      height: 220px;
     }
   }
 
   &__title {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.375;
+    margin-bottom: 20px;
   }
 
   &__links {
-    color: #045e3e;
     display: flex;
-    gap: 10px;
-    font-size: 18px;
+    gap: 40px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    align-self: end;
+    justify-self: end;
+
+    a:hover {
+      color: #045e3e;
+    }
   }
 
   &__editorial {
@@ -78,7 +87,7 @@
   &__title {
     font-family: "Mona Sans", sans-serif;
     padding-top: 50px;
-    color: #322304;
+    color: white;
     font-size: 32px;
     letter-spacing: -1.12px;
     text-align: center;
