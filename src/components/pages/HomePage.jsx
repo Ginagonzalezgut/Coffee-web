@@ -56,11 +56,12 @@ function HomePage() {
       <div className="homepage-hero">
         <div className="homepage-hero__overlay"></div>
         <h1 className="homepage-hero__title">
-          Descubre los Mejores Spots de Barcelona
+          Descubre los mejores restaurantes de{" "}
+          <b className="homepage-hero__highlight">Barcelona</b>
         </h1>
-        <h2 className="homepage-hero__subtitle">
+        <p className="homepage-hero__subtitle">
           Encuentra los lugares perfectos para cada plan
-        </h2>
+        </p>
         <div className="homepage-hero__buttons">
           {" "}
           <Link className="homepage-hero__button" to="/login">
@@ -73,10 +74,10 @@ function HomePage() {
       </div>
       <Facts />
       <div className="homepage-categories">
-        <h1 className="homepage-categories__title">Categorías</h1>
-        <h2 className="homepage-categories__tagline">
+        <h2 className="homepage-categories__title">Categorías</h2>
+        <p className="homepage-categories__tagline">
           Explora nuestras recomendaciones
-        </h2>
+        </p>
 
         <div className="homepage-categories__grid">{categoryElements}</div>
       </div>
